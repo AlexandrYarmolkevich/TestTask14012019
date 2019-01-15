@@ -1,0 +1,29 @@
+tr th, td {
+    vertical-align: middle !important;
+}
+
+.error-input {
+    border: 1px solid red !important;
+}
+
+.add-row {
+    margin: 10px 0 10px 10px;
+}
+
+.container-full {
+    padding: 0 5%;
+}
+
+h2 {
+    font-family: Cambria !important;
+}
+
+.header-inputs {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-inputs .col:first-child input {
+    width: 450px;
+}

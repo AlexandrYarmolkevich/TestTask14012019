@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-full">
+    <h2 class="text-center">Labrecque Family Chiropractic, PC</h2>
+    <h2 class="text-center font-weight-bold">Scoliosis Protocol</h2>
+    <div class="text-center header-inputs">
+        <div class="col">
+            <label for="DOB">PATIENT NAME:</label>
+            <input type="text">
+        </div>
+        <div class="col">
+            <label for="DOB">DOB:</label>
+            <input type="text" class="d-inline" id="DOB">
+        </div>
+    </div>
+    <button type="button" id="addRow" class="btn btn-success add-row">Add new row</button>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Initials</th>
+            <th scope="col">Table Total Min</th>
+            <th scope="col">Chair Total Min</th>
+            <th scope="col">Notes (Indicate how patient tolerated treatment)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control datepicker">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </th>
+            <td><input type="text"></td>
+            <td><input type="text" class="count-table"></td>
+            <td><input type="text" class="count-chair"></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="Pt1">
+                    <label for="Pt1">Pt. tolerated treatment well</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="PatientCheck" id="Pt2">
+                    <label for="Pt2">Pt.c/o after use of</label>
+                    <input type="radio" name="Used1" id="rad1">
+                    <label for="rad1">Scoliosis Table</label>
+                    <input type="radio" name="Used1" id="rad2">
+                    <label for="rad2">Chair</label>
+                    <input type="text" class="propertyCli" disabled>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="stop-treatment" id="Pt3">
+                    <label for="Pt3">Stopped treatment prematurely due to</label>
+                    <input type="text" class="Reason" disabled>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control datepicker">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </th>
+            <td><input type="text"></td>
+            <td><input type="text" class="count-table"></td>
+            <td><input type="text" class="count-chair"></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="Pt4">
+                    <label for="Pt4">Pt. tolerated treatment well</label>
+                </div>
+
+                <div>
+
+                    <input type="checkbox" class="PatientCheck" id="Pt5">
+                    <label for="Pt5">Pt.c/o after use of</label>
+                    <input type="radio" name="Used2" id="rad3">
+                    <label for="rad3">Scoliosis Table</label>
+                    <input type="radio" name="Used2" id="rad4">
+                    <label for="rad4">Chair</label>
+                    <input type="text" class="propertyCli" disabled>
+                </div>
+                <div>
+                    <input type="checkbox" class="stop-treatment" id="Pt6">
+                    <label for="Pt6">Stopped treatment prematurely due to</label>
+                    <input type="text" class="Reason" disabled>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control datepicker">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </th>
+            <td><input type="text"></td>
+            <td><input type="text" class="count-table"></td>
+            <td><input type="text" class="count-chair"></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="Pt7">
+                    <label for="Pt7">Pt. tolerated treatment well</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="PatientCheck" id="Pt8">
+                    <label for="Pt8">Pt.c/o after use of</label>
+                    <input type="radio" name="Used3" id="rad5">
+                    <label for="rad5">Scoliosis Table</label>
+                    <input type="radio" name="Used3" id="rad6">
+                    <label for="rad6">Chair</label>
+                    <input type="text" class="propertyCli" disabled>
+                </div>
+                <div>
+                    <input type="checkbox" class="stop-treatment" id="Pt9">
+                    <label for="Pt9">Stopped treatment prematurely due to</label>
+                    <input type="text" class="Reason" disabled>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control datepicker">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </th>
+            <td><input type="text"></td>
+            <td><input type="text" class="count-table"></td>
+            <td><input type="text" class="count-chair"></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="Pt10">
+                    <label for="Pt10">Pt. tolerated treatment well</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="PatientCheck" id="Pt11">
+                    <label for="Pt11">Pt.c/o after use of</label>
+                    <input type="radio" name="Used4" id="rad7">
+                    <label for="rad7">Scoliosis Table</label>
+                    <input type="radio" name="Used4" id="rad8">
+                    <label for="rad8">Chair</label>
+                    <input type="text" class="propertyCli" disabled>
+                </div>
+                <div>
+                    <input type="checkbox" class="stop-treatment" id="Pt12">
+                    <label for="Pt12">Stopped treatment prematurely due to</label>
+                    <input type="text" class="Reason" disabled>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control datepicker">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+            </th>
+            <td><input type="text"></td>
+            <td><input type="text" class="count-table"></td>
+            <td><input type="text" class="count-chair"></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="Pt13">
+                    <label for="Pt13">Pt. tolerated treatment well</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="PatientCheck" id="Pt14">
+                    <label for="Pt14">Pt.c/o after use of</label>
+                    <input type="radio" name="Used5" id="rad9">
+                    <label for="rad9">Scoliosis Table</label>
+                    <input type="radio" name="Used5" id="rad10">
+                    <label for="rad10">Chair</label>
+                    <input type="text" class="propertyCli" disabled>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="stop-treatment" id="Pt15">
+                    <label for="Pt15">Stopped treatment prematurely due to</label>
+                    <input type="text" class="Reason" disabled>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+
+            </th>
+            <td></td>
+            <td><input type="text" class="count-table-result" disabled></td>
+            <td><input type="text" class="count-chair-result" disabled></td>
+            <td></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+</body>
+</html>
